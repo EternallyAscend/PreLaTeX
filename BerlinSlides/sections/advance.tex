@@ -1,0 +1,83 @@
+\section[进一步使用]{进一步使用\LaTeX \, Beamer}
+
+\begin{frame}
+    \frametitle{章节拆分}
+    \begin{block}{引入拆分的章节文件}
+        \textbackslash include\{sections/background\}\\
+        \textbackslash include\{sections/basic\}\\
+        \textbackslash include\{sections/advance\}\\
+        \textbackslash include\{sections/summary\}\\
+    \end{block}
+    可以将不同章节拆分后编写。当论文篇幅较长时，更容易查找文章对应章节的内容。
+\end{frame}
+
+\begin{frame}
+    \frametitle{参考文献}
+    GitHub上的一个\LaTeX \, Beamer示例\footfullcite{gitHubRepo}。
+    \begin{block}{reference.bib文件}
+        \small
+        @misc\{gitHubRepo,\\
+        \quad title=\{PreLaTeX\},\\
+        \quad author=\{EternallyAscend\},\\
+        \quad howpublished=\{https://github.com/EternallyAscend/PreLaTeX\}\\
+        \}
+    \end{block}
+    编写好reference.bib后，需要在tex主文件中引入。\\
+    同时需要注意biber编译过程。
+\end{frame}
+
+\begin{frame}
+    \frametitle{参考文献}
+    \begin{block}{tex主文件，此处仅引入宏包和reference.bib，未设置格式}
+        \small
+        \textbackslash usepackage[backend=biber,sorting=none]\{biblatex\}\\
+        \textbackslash addbibresource\{reference.bib\}
+    \end{block}
+    \begin{block}{文内引用}
+        \small
+        GitHub上的一个\textbackslash LaTeX \textbackslash , Beamer示例 \textbackslash footfullcite\{gitHubRepo\}。
+    \end{block}
+\end{frame}
+
+\begin{frame}
+    \frametitle{推荐编译方法}
+    \begin{block}{效果预览}
+        直接使用xelatex main命令即可
+    \end{block}
+    \begin{block}{编译成文}
+        由于涉及目录和参考文献。按照xelatex -> biber -> xelatex -> xelatex的流程编译。
+    \end{block}
+    .vscode文件夹内设置了VSCode中的编译命令。
+\end{frame}
+
+\begin{frame}
+    \frametitle{动画}
+    \begin{columns}
+        \begin{column}{0.7\textwidth}
+            \begin{block}{无序列表}<1->
+                \textbackslash begin\{block\}\{基础Block\}<1->\\
+                    \quad \textbackslash dots\\
+                \textbackslash end\{block\}\\
+                \textbackslash begin\{exampleblock\}\{举例Block\}<2->\\
+                    \quad \textbackslash dots\\
+                \textbackslash end\{exampleblock\}\\
+                \textbackslash begin\{alertblock\}\{警告Block\}<3->\\
+                    \quad \textbackslash dots\\
+                \textbackslash end\{alertblock\}
+            \end{block}
+        \end{column}
+        \begin{column}{0.2\textwidth}
+            \begin{block}{基础Block}<1->
+                \dots
+            \end{block}
+            \begin{exampleblock}{举例Block}<2->
+                \dots
+            \end{exampleblock}
+            \begin{alertblock}{警告Block}<3->
+                \dots
+            \end{alertblock}
+        \end{column}
+        \begin{column}{0.10\textwidth}
+        \end{column}
+    \end{columns}
+\end{frame}

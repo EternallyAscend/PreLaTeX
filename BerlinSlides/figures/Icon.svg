@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="360mm"
+   height="360mm"
+   viewBox="0 0 360 360"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2 (dc2aeda, 2022-05-15)"
+   sodipodi:docname="Logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.44785584"
+     inkscape:cx="926.63746"
+     inkscape:cy="691.07059"
+     inkscape:window-width="1394"
+     inkscape:window-height="1035"
+     inkscape:window-x="262"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="图层 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:#800080;stroke-width:0.264583"
+       id="path131"
+       cx="180"
+       cy="180"
+       r="180" />
+    <text
+       xml:space="preserve"
+       style="font-size:56.4444px;font-family:Harmony;-inkscape-font-specification:Harmony;fill:#ffffff;stroke-width:0.264583"
+       x="55"
+       y="121.3173"
+       id="text172"><tspan
+         sodipodi:role="line"
+         id="tspan170"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56.4444px;font-family:'HarmonyOS Sans SC';-inkscape-font-specification:'HarmonyOS Sans SC';stroke-width:0.264583"
+         x="55"
+         y="121.3173">University</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56.4444px;font-family:'HarmonyOS Sans SC';-inkscape-font-specification:'HarmonyOS Sans SC';stroke-width:0.264583"
+         x="55"
+         y="192.34973"
+         id="tspan224">     Icon</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:35.2778px;font-family:'HarmonyOS Sans SC';-inkscape-font-specification:'HarmonyOS Sans SC';fill:#ffffff;stroke-width:0.264583"
+       x="51.930832"
+       y="281.84641"
+       id="text346"><tspan
+         sodipodi:role="line"
+         id="tspan344"
+         style="font-size:35.2778px;stroke-width:0.264583"
+         x="51.930832"
+         y="281.84641">EtermallyAscend</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,141 @@
+\section[基本使用]{基本使用\LaTeX \, Beamer}
+% \subsection[页面逻辑结构]{页面逻辑结构}
+\begin{frame}
+    \frametitle{新页面}
+    \begin{columns}
+        \begin{column}{0.94\textwidth}
+            \begin{block}{新建章与子章}<1->
+                \begin{enumerate}
+                    \item \textbackslash section[章缩写]\{章全称\}\\
+                    \item \textbackslash subsection [子章缩写]\{子章全称\} \% 可选
+                \end{enumerate}
+            \end{block}
+            \begin{block}{新建页面}<2->
+                \textbackslash begin{frame}\\
+                \textbackslash frametitle\{页面标题\}\\ \dots \\
+                \textbackslash end{frame}
+            \end{block}
+        \end{column}
+        \begin{column}{0.06\textwidth}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% \subsection[页面内容元素]{页面内容元素}
+\begin{frame}
+    \frametitle{Table}
+    \begin{columns}
+        \begin{column}{0.94\textwidth}
+            \begin{block}{图}
+                \textbackslash begin\{figure\}\\
+                \quad \textbackslash centering\\
+                    \quad \textbackslash includegraphics[width=0.70\textbackslash textwidth]\{figures/Icon.eps\}\\
+                    \quad \textbackslash caption\{图片示例\}
+                    \, \textbackslash label\{figure\}\\
+                \textbackslash end\{figure\}
+            \end{block}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.16\textwidth]{figures/Icon.eps}
+                \caption{图片示例}\label{figure}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.06\textwidth}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Table}
+    \begin{columns}
+        \begin{column}{0.45\textwidth}
+            \begin{block}{三线表}
+                \textbackslash begin\{table\}[htbp] \\
+                \quad \textbackslash centering\\
+                \quad \textbackslash caption\{三线表\}\\
+                \quad \textbackslash label\{table\}\\
+                \quad \textbackslash begin\{tabular\}\{ccc\}\\
+                \quad \quad \textbackslash hline Index\& Item\& Label\textbackslash \textbackslash \, \textbackslash hline\\
+                \quad \quad 0\& 0\& False \textbackslash \textbackslash\\
+                \quad \quad 1\& 1\& True \textbackslash\textbackslash
+                \, \textbackslash hline\\
+                \quad end\{tabular\}\\
+                \textbackslash end\{table\}\\
+            \end{block}
+        \end{column}
+        \begin{column}{0.45\textwidth}
+            \begin{table}[htbp]
+                \centering
+                \caption{三线表}
+                \label{table}
+                \begin{tabular}{ccc}
+                    \hline Index&Item&Label\\ \hline
+                    0&0&False \\ 
+                    1&1&True \\ \hline
+                \end{tabular}
+            \end{table}
+        \end{column}
+        \begin{column}{0.06\textwidth}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Block}
+    \begin{columns}
+        \begin{column}{0.94\textwidth}
+            \begin{block}{基础Block}<1->
+                \textbackslash begin\{block\}\{标题\}\\ \dots \\
+                \textbackslash end\{block\}
+            \end{block}
+            \begin{exampleblock}{举例Block}<2->
+                \textbackslash begin\{exampleblock\}\{标题\} \dots
+                \textbackslash end\{exampleblock\}
+            \end{exampleblock}
+            \begin{alertblock}{警告Block}<3->
+                \textbackslash begin\{alertblock\}\{标题\} \dots
+                \textbackslash end\{alertblock\}
+            \end{alertblock}
+        \end{column}
+        \begin{column}{0.06\textwidth}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{List}
+    \begin{columns}
+        \begin{column}{0.45\textwidth}
+            \begin{block}{有序列表}<1->
+                \textbackslash begin\{enumerate\} \\
+                \quad \textbackslash item 列表项 \\
+                \quad \dots \\
+                \textbackslash end\{enumerate\}
+            \end{block}
+            \begin{block}{有序列表}<2->
+                \begin{enumerate}
+                    \item 0
+                    \item 1
+                    \item 2
+                \end{enumerate}
+            \end{block}
+        \end{column}
+        \begin{column}{0.45\textwidth}
+            \begin{block}{无序列表}<1->
+                \textbackslash begin\{itemize\} \\
+                \quad \textbackslash item 列表项 \\
+                \quad \dots \\
+                \textbackslash end\{itemize\}
+            \end{block}
+            \begin{block}{无序列表}<2->
+                \begin{itemize}
+                    \item 0
+                    \item 1
+                    \item 10
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{0.10\textwidth}
+        \end{column}
+    \end{columns}
+\end{frame}

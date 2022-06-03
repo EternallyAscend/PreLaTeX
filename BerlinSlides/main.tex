@@ -1,0 +1,63 @@
+% !TEX program = xelatex
+\documentclass[UTF8]{ctexbeamer}
+% \documentclass[11pt]{beamer}
+\usetheme{Berlin}
+% \usetheme{Madrid}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage[english]{babel}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{ctex}
+
+% 参考文献
+% \usepackage[style=verbose,backend=biber]{biblatex}
+% \addbibresource{reference.bib}
+\usepackage[backend=biber,sorting=none]{biblatex}
+\addbibresource{reference.bib}
+\setbeamerfont{footnote}{size=\tiny}
+\hypersetup{pdfpagemode=FullScreen}
+
+\begin{document}
+\renewcommand{\today}{\number\year 年\number\month 月\number\day 日}
+\renewcommand{\figurename}{图}
+\renewcommand{\tablename}{表}
+%\begin{frame}
+    \title{毕业设计答辩\LaTeX \, Beamer演示文稿} % 标题，用作中文标题显示
+    \subtitle{\LaTeX \, Beamer Presentation for Graduation Thesis Defense} % 副标题，用作英文标题显示
+    \author[答辩人：EternallyAscend\ ]{答辩人：EternallyAscend\newline 学号：GitHub\newline 指导教师：指导教师} % 设置作者
+    \institute[就读大学\ 就读学院]{就读大学\newline 就读学院} % 设置学校和学院
+    \date{\today}  % 设置日期显示
+        \logo{\includegraphics[width=1.6cm,height=1.6cm]{figures/Icon.eps}}
+
+% 标题页
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% 目录页
+\section[目录]{目录}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{
+    \frametitle{\secname}
+    \tableofcontents
+}
+\AtBeginSubsection[] {
+    \frame<handout:0> {
+        \frametitle{Contents}
+        \tableofcontents[current]
+        % \tableofcontents[current,currentsubsection]
+    }
+}
+
+\include{sections/background}
+
+\include{sections/basic}
+
+\include{sections/advance}
+
+\include{sections/summary}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \bibliographystyle{plain}
+% \bibliography{reference}
+\end{document}
